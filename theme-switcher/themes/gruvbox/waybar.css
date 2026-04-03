@@ -1,0 +1,203 @@
+@define-color bg0 #1d2021;
+@define-color bg1 #282828;
+@define-color bg2 #3c3836;
+@define-color bg3 #504945;
+@define-color bg4 #665c54;
+@define-color fg #ebdbb2;
+@define-color gruv-red #cc241d;
+@define-color gruv-orange #d65d0e;
+@define-color gruv-yellow #d79921;
+@define-color gruv-green #b8bb26;
+@define-color gruv-aqua #689d6a;
+@define-color gruv-blue #458588;
+@define-color gruv-purple #b16286;
+
+@define-color grey0 #a89984;
+@define-color grey1 #928374;
+@define-color grey2 #7c6f64;
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono", sans-serif;
+  font-size: 14px;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network {
+  padding: 0 8px;
+}
+
+#battery,
+#pulseaudio,
+#network {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#clock {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#battery{
+    background-color: @gruv-green;
+    margin:6px 0;
+    padding:0 8px;
+    border-radius:99px;
+    font-weight:500;
+    color:@bg1;
+    letter-spacing:-1px;
+}
+
+#battery.warning{
+    background-color: @gruv-yellow;
+}
+
+#battery.critical{
+    background-color: @gruv-red;
+}
+
+tooltip {
+  background-color: @bg1;
+  color: @fg;
+  border-radius:20px;
+}
+
+#tray {
+  background-color: @bg2;
+  padding: 2px 10px;
+  border-radius: 99px;
+}
+
+/* The right-click popup itself */
+#tray menu {
+  background-color: @bg1;
+  color: @fg;
+  border: 1px solid @bg4;
+  border-radius: 14px;
+  padding: 6px;
+}
+
+/* Each item inside the popup */
+#tray menu menuitem {
+  background-color: transparent;
+  color: @fg;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin: 2px 0;
+}
+
+/* Hovered item */
+#tray menu menuitem:hover {
+  background-color: @bg3;
+  color: @fg;
+}
+
+/* Disabled items */
+#tray menu menuitem:disabled {
+  color: @grey1;
+}
+
+/* Optional separators */
+#tray menu separator {
+  background-color: @bg4;
+  min-height: 1px;
+  margin: 4px 6px;
+}
+
+.modules-center {
+  background-color: @bg1;
+  color: @fg;
+  padding: 4px 18px;
+  border-radius: 99px;
+}
+
+#clock {
+  font-weight: 700;
+  
+}
+/* 
+#workspaces {
+  background-color: @bg2;
+  padding: 2px 3px;
+  margin: 3px 0px;
+  border-radius: 99px;
+}
+
+#workspaces button {
+  background-color: @bg3;
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin: 0 2px;
+  transition: all 300ms ease-in-out;
+  min-width: 7px;
+}
+
+#workspaces button.empty {
+  color: @grey0;
+}
+
+#workspaces button.active {
+  background-color: @gruv-green;
+  color: @bg1;
+  min-width: 1.5rem;
+  font-weight: 500;
+  transition: none;
+} */
+
+#workspaces {
+  background-color: @bg2;
+  padding: 3px 4px;
+  margin: 3px 0;
+  border-radius: 99px;
+}
+
+#workspaces button {
+  background-color: alpha(@bg3, 0.75);
+  color: @fg;
+  padding: 2px 10px;
+  border-radius: 99px;
+  margin: 0 3px;
+  min-width: 10px;
+
+  transition-property: background-color, color, min-width, padding, box-shadow;
+  transition-duration: 220ms;
+  transition-timing-function: ease-out;
+}
+
+#workspaces button:hover {
+  background-color: @bg4;
+  color: @fg;
+}
+
+#workspaces button.empty {
+  background-color: alpha(@bg3, 0.45);
+  color: @grey0;
+}
+
+#workspaces button.visible {
+  background-color: alpha(@gruv-blue, 0.22);
+  color: @fg;
+}
+
+#workspaces button.active {
+  background-color: @gruv-green;
+  color: @bg1;
+  min-width: 1.9rem;
+  padding: 2px 8px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px alpha(@fg, 0.08);
+}
+
+#custom-awake {
+  background-color: @gruv-green;
+  margin: 6px 0;
+  padding: 0 8px;
+  min-height: 20px;
+  border-radius: 99px;
+  color: @bg1;
+  font-weight: 500;
+  font-size: 14px;
+}

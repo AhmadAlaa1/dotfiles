@@ -1,0 +1,261 @@
+/* =========================================================
+   SWAYNC - Catppuccin Mocha Purple Theme
+   Normal border  : #585b70
+   Hover border   : #cba6f7
+   ========================================================= */
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+}
+
+/* =========================
+   CONTROL CENTER PANEL
+   ========================= */
+.control-center {
+  background: #1e1e2e;
+  border: 2px solid #585b70;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.control-center:hover,
+.control-center:focus,
+.control-center:active {
+  border: 2px solid #cba6f7;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+.control-center .title {
+  color: #cdd6f4;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.control-center .clear-all {
+  background: transparent;
+  color: #bac2de;
+  border: none;
+  box-shadow: none;
+}
+
+.control-center .clear-all:hover {
+  color: #cba6f7;
+}
+
+/* =========================
+   DO NOT DISTURB WIDGET
+   ========================= */
+.widget-dnd {
+  background: #313244;
+  border: 1px solid #585b70;
+  border-radius: 12px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.widget-dnd:hover,
+.widget-dnd:focus,
+.widget-dnd:active {
+  border: 1px solid #cba6f7;
+}
+
+/* =========================
+   EMPTY STATE
+   ========================= */
+.control-center .notification-group {
+  margin-top: 20px;
+}
+
+.notification-group .empty {
+  color: #9399b2;
+  font-size: 13px;
+}
+
+/* =========================
+   POPUP NOTIFICATIONS
+   ========================= */
+
+/* outer wrapper: no border */
+.notification {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* row wrapper: no border */
+.notification-row {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* inner container: no border */
+.notification-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* background wrapper: no border */
+.notification-background {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ONLY THIS ONE GETS THE BORDER */
+.notification-default-action {
+  background: #313244;
+  color: #cdd6f4;
+  border: 1px solid #585b70;
+  border-radius: 14px;
+  padding: 10px 12px;
+  box-shadow: none;
+}
+
+.notification-default-action:hover,
+.notification-default-action:focus,
+.notification-default-action:active {
+  border: 1px solid #cba6f7;
+}
+
+/* =========================
+   CONTROL CENTER NOTIFICATIONS
+   ========================= */
+.control-center .notification-row .notification-background {
+  background: #313244;
+  border: 1px solid #585b70;
+  border-radius: 14px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.control-center .notification-row .notification-background:hover,
+.control-center .notification-row .notification-background:focus,
+.control-center .notification-row .notification-background:active {
+  border: 1px solid #cba6f7;
+}
+
+/* Avoid ugly nested frame */
+.control-center .notification-row .notification-default-action {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* =========================
+   NOTIFICATION TEXT
+   ========================= */
+.notification-title {
+  color: #cdd6f4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.notification-body {
+  color: #bac2de;
+}
+
+.notification-app-name {
+  color: #cba6f7;
+  font-weight: bold;
+}
+
+.notification-time {
+  color: #a6adc8;
+}
+
+/* =========================
+   ACTION BUTTONS
+   ========================= */
+.notification-action {
+  background: #45475a;
+  color: #cdd6f4;
+  border: 1px solid #585b70;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.notification-action:hover,
+.notification-action:focus,
+.notification-action:active {
+  background: #cba6f7;
+  color: #1e1e2e;
+  border: 1px solid #cba6f7;
+}
+
+/* =========================
+   SLIDERS
+   ========================= */
+.widget-slider {
+  background: transparent;
+}
+
+.widget-slider trough {
+  background: #45475a;
+  border-radius: 10px;
+  min-height: 8px;
+  min-width: 8px;
+}
+
+.widget-slider highlight {
+  background: #cba6f7;
+  border-radius: 10px;
+}
+
+/* =========================
+   MPRIS / BUTTON-LIKE WIDGETS
+   ========================= */
+.widget-mpris,
+.widget-buttons-grid,
+.widget-volume,
+.widget-backlight {
+  background: #313244;
+  border: 1px solid #585b70;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.widget-mpris:hover,
+.widget-buttons-grid:hover,
+.widget-volume:hover,
+.widget-backlight:hover {
+  border: 1px solid #cba6f7;
+}
+
+/* =========================
+   LABELS / MISC
+   ========================= */
+label {
+  color: #cdd6f4;
+}
+
+image {
+  -gtk-icon-shadow: none;
+}
+
+/* =========================
+   REMOVE CLUTTER
+   ========================= */
+.notification-default-action {
+  box-shadow: none;
+}
+
+.notification-group-header,
+.notification-group-icon {
+  color: #bac2de;
+}
