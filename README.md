@@ -1,4 +1,4 @@
-# 🧠 Ahmad Alaa's Dotfiles
+# My Dotfiles
 
 A modern Linux rice setup built with **Hyprland**, designed for speed, aesthetics, and full theme consistency across the system.
 
